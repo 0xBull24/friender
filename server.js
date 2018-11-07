@@ -6,4 +6,5 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, ()=> {
   console.log(`Friender is now started and listening on port ${PORT}`);
+  console.log(path.join(__filename));
 })

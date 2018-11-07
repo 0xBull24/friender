@@ -1,0 +1,23 @@
+/* Page Rules */
+html {
+  background-color: #F64740;
+}
+
+.uk-section {
+  text-align: center;
+}
+
+/* Navigation */
+a, a:any-link {
+  text-decoration: none;
+  color: black !important;
+}
+
+a:hover {
+  background-color: #477998 !important;
+}
+
+/* Home */
+.heart {
+  color: red;
+}
