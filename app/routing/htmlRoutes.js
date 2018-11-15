@@ -7,7 +7,7 @@ module.exports = (app) => {
     });
 
     // Route for the main / home page
-    app.use('/', (req, res) => {
+    app.get('/', (req, res) => {
         res.sendFile(path.join(__dirname, '../public/home.html'));
     });
 };

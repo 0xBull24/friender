@@ -14,10 +14,16 @@ a, a:any-link {
 }
 
 a:hover {
-  background-color: #477998 !important;
+  color: white !important;
 }
 
 /* Home */
 .heart {
   color: red;
+}
+
+/* Footer */
+footer {
+  color: black;
+  text-align: center;
 }
