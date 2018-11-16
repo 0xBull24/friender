@@ -2,47 +2,176 @@
 <html lang="en">
 
 <head>
-  <title></title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
-  <link href="styles.css" rel="stylesheet">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="uk-navbar-container uk-navbar-transparent uk-navbar">
-    <div class="uk-navbar-center">
-      <ul class="uk-navbar-nav">
-        <li class="uk-parent"><a href="/">Home</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Navigation -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-navbar">
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li class="uk-parent"><a href="/app/public/home..html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <div class="uk-section uk-section-default">
-    <div class="uk-container">
-      <h1>Welcome to Friender</h1>
-      <hr class="uk-divider-icon"/>
-      <h4>Take a small survey ...</h4>
-      <h3>And find out who you match best with</h3>
-      <span class="heart" uk-icon="icon: heart; ratio: 2"></span>
-    </div>  
-  </div>
+    <div class="uk-section uk-section-default">
+        <div class="uk-container">
+            <h1>Friender Survey</h1>
+            <hr class="uk-divider-icon" />
+
+            <!-- Form -->
+            <form>
+                <fieldset class="uk-fieldset">
+                    <h3><label for="name">Enter your name</label></h3>
+                    <div class="uk-grid">
+                        <div class="uk-width-1-2">
+                            <input type="input" class="uk-input" id="first-name" placeholder="First name ...">
+                        </div>
+                        <div class="uk-width-1-2">
+                            <input type="input" class="uk-input" id="last-name" placeholder="Last name ...">
+                        </div>
+                    </div>
+                    <h3><label for="Q1">Do you like Dogs?</label></h3>
+                    <div class="row">
+                        <select class="uk-select" id="q1">
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 - Strongly agree</option>
+                        </select>
+                    </div>
+                    <h3><label for="Q2">Do you like Cats?</label></h3>
+                    <div class="row">
+                        <select class="uk-select" id="q2">
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 - Strongly agree</option>
+                        </select>
+                    </div>
+                    <h3><label for="Q3">Do you like Coding?</label></h3>
+                    <div class="row">
+                        <select class="uk-select" id="q3">
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 - Strongly agree</option>
+                        </select>
+                    </div>
+                    <h3><label for="Q4">Do you like Javascript?</label></h3>
+                    <div class="row">
+                        <select class="uk-select" id="q4">
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 - Strongly agree</option>
+                        </select>
+                    </div>
+                    <h3><label for="Q5">Do you like PUBG?</label></h3>
+                    <div class="row">
+                        <select class="uk-select" id="q5">
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 - Strongly agree</option>
+                        </select>
+                    </div>
+                    <h3><label for="Q6">Do you like Fortnite?</label></h3>
+                    <div class="row">
+                        <select class="uk-select" id="q6">
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 - Strongly agree</option>
+                        </select>
+                    </div>
+                    <h3><label for="Q7">Do you like walks on the beach?</label></h3>
+                    <div class="row">
+                        <select class="uk-select" id="q7">
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 - Strongly agree</option>
+                        </select>
+                    </div>
+                    <h3><label for="Q8">Do you like Fantasy Football?</label></h3>
+                    <div class="row">
+                        <select class="uk-select" id="q8">
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 - Strongly agree</option>
+                        </select>
+                    </div>
+                    <h3><label for="Q9">Do you like the NBA?</label></h3>
+                    <div class="row">
+                        <select class="uk-select" id="q9">
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 - Strongly agree</option>
+                        </select>
+                    </div>
+                    <h3><label for="Q10">Do you like Fast Food?</label></h3>
+                    <div class="row">
+                        <select class="uk-select" id="q10">
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 - Strongly agree</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <button class="uk-margin uk-button submit" type="submit" uk-toggle="target: #modal">Submit</button>
+            </form>
+
+            <!-- Modal -->
+            <div id="modal" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <h2 class="uk-modal-title">Your Best Match is: <span id="match-name"></span></h2>
+                    <p>Check out your match !</p>
+                    <img id="match-image" src="" />
+                    <p class="uk-text-right">
+                        <button class="uk-button uk-button-primary uk-modal-close" type="button">Back to Home</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <!-- Footer -->
 <footer>
-  <div class="container">
-    <div class="row">
-      <a href="/api/friends">API Data</a> | <a href="https://github.com/DBiles/friender" target="_blank">Github</a>
+    <div class="container">
+        <div class="row">
+            <a href="/api/friends">API Data</a> | <a href="https://github.com/DBiles/friender" target="_blank">Github</a>
+        </div>
     </div>
-  </div>
 </footer>
 
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit.min.js" integrity="sha256-2vL3vDc2j7XdT1qgHvWPSCmULPhJ6q0bLlPIgPXFQPI="
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js" integrity="sha256-eQPdtNjxSg+WO2RwUfv5Jb/ZSlCIfsH6umy+Q9Fpuk0="
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+<script src="/app/data/listener.js"></script>
