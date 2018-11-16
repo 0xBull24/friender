@@ -26,17 +26,19 @@
             <hr class="uk-divider-icon" />
 
             <!-- Form -->
-            <form>
+            <form id="form">
                 <fieldset class="uk-fieldset">
                     <h3><label for="name">Enter your name</label></h3>
                     <div class="uk-grid">
                         <div class="uk-width-1-2">
-                            <input type="input" class="uk-input" id="first-name" placeholder="First name ...">
+                            <input type="input" class="uk-input" id="first-name" placeholder="First name ..." required>
                         </div>
                         <div class="uk-width-1-2">
-                            <input type="input" class="uk-input" id="last-name" placeholder="Last name ...">
+                            <input type="input" class="uk-input" id="last-name" placeholder="Last name ..." required>
                         </div>
                     </div>
+                    <h3><label for="image">Upload an image of yourself</label></h3>
+                    <input type="text" class="uk-input" id="user-image" required>
                     <h3><label for="Q1">Do you like Dogs?</label></h3>
                     <div class="row">
                         <select class="uk-select" id="q1">
