@@ -15,7 +15,7 @@
     <nav class="uk-navbar-container uk-navbar-transparent uk-navbar">
         <div class="uk-navbar-center">
             <ul class="uk-navbar-nav">
-                <li class="uk-parent"><a href="/app/public/home..html">Home</a></li>
+                <li class="uk-parent"><a href="/home.html">Home</a></li>
             </ul>
         </div>
     </nav>
@@ -176,4 +176,32 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js" integrity="sha256-eQPdtNjxSg+WO2RwUfv5Jb/ZSlCIfsH6umy+Q9Fpuk0="
     crossorigin="anonymous"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
-<script src="/app/data/listener.js"></script>
+
+<!-- Listener -->
+<script type="text/javascript">
+    $(function () {
+        // Submit Button
+        $('.submit').on('click', function (event) {
+            event.preventDefault();
+            console.log('Clicking the submit');
+
+            // Set variables
+            first = $('#first-name').val().trim() || '';
+            last = $('#last-name').val().trim() || '';
+            img = $('#user-image').val().trim() || '';
+
+            let formResult = {
+                name: `${first} ${last}`,
+                img: img,
+                results: [],
+            }
+
+            for (let count = 1; count < 11; count++) {
+                formResult.results.push($(`#q${count}`).val());
+            }
+
+            // Clear values of the form
+            $('#form').trigger('reset');
+        });
+    });
+</script>
