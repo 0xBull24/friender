@@ -15,5 +15,5 @@ app.listen(PORT, ()=> {
 });
 
 // Routes
-require('./app/routing/htmlRoutes')(app);
-// require('./app/routing/apiRoutes')(app);
+require('./app/routes/htmlRoutes')(app);
+require('./app/routes/apiRoutes')(app);

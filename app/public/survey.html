@@ -151,7 +151,7 @@
                     <p>Check out your match !</p>
                     <img id="match-image" src="" />
                     <p class="uk-text-right">
-                        <button class="uk-button uk-button-primary uk-modal-close" type="button">Back to Home</button>
+                        <button class="uk-button uk-button-primary uk-modal-close" type="button" onclick="window.location.href='/'">Back to Home</button>
                     </p>
                 </div>
             </div>
@@ -180,6 +180,7 @@
 <!-- Listener -->
 <script type="text/javascript">
     $(function () {
+
         // Submit Button
         $('.submit').on('click', function (event) {
             event.preventDefault();
@@ -199,6 +200,9 @@
             for (let count = 1; count < 11; count++) {
                 formResult.results.push($(`#q${count}`).val());
             }
+            
+            currentUrl = window.location.origin;
+            $.post(``)
 
             // Clear values of the form
             $('#form').trigger('reset');
