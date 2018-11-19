@@ -24,7 +24,7 @@ npm install
 
 ## Running the application
 
-Since this is deployed to Heroku you can just visit the site here: ()
+Since this is deployed to Heroku you can just visit the site here: https://friender-express.herokuapp.com
 
 ## Built With
 
