@@ -1,6 +1,6 @@
 # Friender
 
-Friender is a small application that will allow you to find compatible mates 
+Friender is a small application that will allow you to find compatible mates
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ npm install
 
 ## Running the application
 
-Since this is deployed to Heroku you can just visit the site here: https://friender-express.herokuapp.com
+Since this is deployed to Heroku you can just visit the site ![here](https://friender-express.herokuapp.com)
 
 ## Built With
 
