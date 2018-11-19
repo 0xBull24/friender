@@ -4,36 +4,32 @@ Friender is a small application that will allow you to find compatible mates
 
 ## Prerequisites
 
-For this application, if we want to run this ourselves, we need to make sure we have a few things:
+For this application, if we want to run this for yourself then you will need to make sure you have a few things:
 
 1. [Node](https://nodejs.org/en/)
 
 Once you have this installed you can run the following command to make sure its installed.
 
-```bash
+```node
 node -v
 ```
 
-### Installing
+## Installing
 
-How to install if anything is needed
+Clone this repo and from the root folder of the clone run the following command:
 
-```bash
+```node
 npm install
 ```
 
 ## Running the application
 
-
-How to run the application (include gifs for guidance)
-
-```node
-node 
-```
+Since this is deployed to Heroku you can just visit the site here: ()
 
 ## Built With
 
-* [Link Name](link address) - short description
+* [Express](https://www.npmjs.com/package/express) - JS Server
+
 ## Authors
 
 * **Darron Biles** - [Me](https://github.com/DBiles)

@@ -149,7 +149,7 @@
                 <div class="uk-modal-dialog uk-modal-body">
                     <h2 class="uk-modal-title">Your Best Match is: <span id="match-name"></span></h2>
                     <p>Check out your match !</p>
-                    <img id="match-image" src="" />
+                    <img id="match-image" src="">
                     <p class="uk-text-right">
                         <button class="uk-button uk-button-primary uk-modal-close" type="button" onclick="window.location.href='/'">Back to Home</button>
                     </p>
@@ -184,7 +184,6 @@
         // Submit Button
         $('.submit').on('click', function (event) {
             event.preventDefault();
-            console.log('Clicking the submit');
 
             // Set variables
             first = $('#first-name').val().trim() || '';
@@ -201,8 +200,13 @@
                 formResult.results.push($(`#q${count}`).val());
             }
             
+            // Grab URL path
             currentUrl = window.location.origin;
-            $.post(``)
+
+            $.post(`${currentUrl}/api/friends`, formResult).then(data => {
+                $('#match-name').html(data.name);
+                $('#match-image').attr('src', data.photo);
+            });
 
             // Clear values of the form
             $('#form').trigger('reset');
